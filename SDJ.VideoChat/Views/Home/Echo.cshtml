@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Echo";
+}
+<video id="echoViewer" style="height: 100%;width: 100%;border: 2px solid black;" autoplay="autoplay"></video>
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            sdj.application.initializeEcho('echoViewer');
+        });
+    </script>
+}

@@ -1,0 +1,41 @@
+﻿.ui-actions {
+    margin-bottom: 10px;
+}
+
+#usersListWidget ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#usersListWidget ul li {
+    padding-right: 6px;
+}
+
+#usersListWidget ul li a {
+    display: block;
+    width: 100%;
+}
+
+#usersListWidget ul li span.ui-icon, span.ui-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#videoWidget {
+    margin-bottom: 10px;
+}
+
+#videoWidgetOwnStream {
+    float: left;
+    width: 49%;
+}
+
+#videoWidgetPartnerStream {
+    float: right;
+    width: 49%;
+}
+
+#videoWidgetOwnStream video, #videoWidgetPartnerStream video {
+    width: 100%;
+}

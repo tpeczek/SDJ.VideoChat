@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Chat";
+}
+<div id="videoWidget" class="ui-helper-clearfix">
+    <div id="videoWidgetOwnStream" class="ui-widget">
+        <div class="ui-widget-header">Your stream</div>
+        <div class="ui-widget-content">
+            <video id="videoViewerOwn" autoplay="autoplay"></video>
+        </div>
+    </div>
+    <div id="videoWidgetPartnerStream" class="ui-widget">
+        <div class="ui-widget-header">Partner stream</div>
+        <div class="ui-widget-content">
+            <video id="videoViewerPartner" autoplay="autoplay"></video>
+        </div>
+    </div>
+</div>
+<div class="ui-actions">
+    <button>Disconnect</button>
+</div>
+<div id="usersListWidget" class="ui-widget ui-helper-clearfix">
+    <div class="ui-widget-header">Connected Users</div>
+    <ul class="ui-widget-content ui-helper-clearfix"></ul>
+</div>
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            sdj.application.initializeChat($('#usersListWidget ul.ui-widget-content'), $('#videoViewerOwn')[0], $('#videoViewerPartner')[0]);
+        });
+    </script>
+}
