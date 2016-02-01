@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("SDJ.VideoChat")]
-[assembly: AssemblyCopyright("Copyright ©  2015 Tomasz Pęczek")]
+[assembly: AssemblyCopyright("Copyright ©  2015 - 2016 Tomasz Pęczek")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
